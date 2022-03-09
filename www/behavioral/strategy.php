@@ -7,13 +7,11 @@
  * Важно, чтобы все стратегии имели общий интерфейс. Используя этот интерфейс, контекст будет независимым от конкретных классов стратегий.
  * С другой стороны, вы сможете изменять и добавлять новые виды алгоритмов, не трогая код контекста.
  */
-
 require_once '../../vendor/autoload.php';
 
 use Behavioral\Strategy\Context;
 use Behavioral\Strategy\StrategyA;
 use Behavioral\Strategy\StrategyB;
-
 
 $context = new Context(new StrategyA());
 echo "Client: Strategy is set to normal sorting." . "<br>";
