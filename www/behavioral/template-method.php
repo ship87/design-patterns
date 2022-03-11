@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Паттерн Шаблонный метод предлагает разбить алгоритм на последовательность шагов, описать эти шаги в отдельных методах
  * и вызывать их в одном шаблонном методе друг за другом. Это позволит подклассам переопределять некоторые шаги алгоритма,
@@ -17,9 +18,9 @@ function clientCode(AbstractClass $class)
     // ...
 }
 
-echo "Same client code can work with different subclasses:"."<br>";
+echo "Same client code can work with different subclasses:" . "<br>";
 clientCode(new ConcreteClass1());
 echo "<br>";
 
-echo "Same client code can work with different subclasses:"."<br>";
+echo "Same client code can work with different subclasses:" . "<br>";
 clientCode(new ConcreteClass2());
