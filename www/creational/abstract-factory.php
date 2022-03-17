@@ -18,9 +18,6 @@ function clientCode(AbstractFactoryInterface $factory)
     echo $productB->anotherUsefulFunctionB($productA) . "<br>";
 }
 
-/**
- * Клиентский код может работать с любым конкретным классом фабрики.
- */
 echo "Client: Testing client code with the first factory type:" . "<br>";
 clientCode(new ConcreteFactory1());
 
