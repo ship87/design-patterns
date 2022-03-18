@@ -5,6 +5,7 @@
     "autoload": {
         "psr-4": {
             "Behavioral\\": "src/Behavioral",
+            "Structural\\": "src/Structural",
             "Creational\\": "src/Creational"
         }
     }
